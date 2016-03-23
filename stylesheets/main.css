@@ -12,10 +12,15 @@ nav{
 	background: rgba(0,0,0,0.2);
 }
 
-#banner .inner h1{
+h1{
 
 	font-size: 30px;
 	padding-bottom: 30px;
+}
+h2{
+
+	font-size: 24px;
+
 }
 ul{
 
@@ -183,7 +188,6 @@ background-color: rgba(255,255,255,0.05);
 
 .text-section h2{
 	margin-top: 10px;
-	font-size: 20px;
 	margin-bottom: 20px;
 }
 
