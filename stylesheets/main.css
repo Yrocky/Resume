@@ -290,3 +290,9 @@ background-color: rgba(255,255,255,0.05);
 	background-size: cover;
 	background-position: center center;
 }
+
+@media screen and (max-width: 300px) {
+    body {
+        background-size: contain;
+    }
+}
