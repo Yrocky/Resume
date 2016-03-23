@@ -35,11 +35,16 @@ nav ul li{
 	margin-top: 10px;
 	margin-right: 30px;
 }
-nav ul li a{
+a{
 	display: inline-block;
 	line-height: inherit;
 	text-decoration: none;
 	color: #fff;
+}
+
+.logo a{
+	margin-top: 30px;
+	margin-right: 30px;
 }
 
 .logo{
