@@ -20,7 +20,7 @@ nav{
 h1{
 
 	font-size: 30px;
-	padding-bottom: 30px;
+	/*padding-bottom: 30px;*/
 }
 h2{
 
@@ -121,8 +121,8 @@ nav a{
 
 .hr{
 	width: 60%;
-	margin:  20px auto;
-	height: 2px;
+	margin: 20px auto;
+	height: 1px;
 }
 /*content*/
 
@@ -178,6 +178,7 @@ nav a{
 	width: 35%;
 	margin-bottom: 0px;
 	padding-bottom: 0px;
+	height: 100%;
 }
 
 .article-preview > div{
@@ -206,6 +207,7 @@ background-color: rgba(255,255,255,0.05);
 .img-section img{
 
 	width: 100%;
+	height: 100%;
 }
 
 .project-section .text-section{
@@ -214,6 +216,7 @@ background-color: rgba(255,255,255,0.05);
 	position: relative;
 	top: 10px;
 	left: 30px;
+	margin-bottom: 20px;
 }
 
 .text-section h2{
@@ -251,18 +254,13 @@ background-color: rgba(255,255,255,0.05);
 
 .skill-section .hr{
 
-	width: 80%;
 	background: red;
 }
 .card-group{
 
 	margin: 20px;
 }
-.card h3{
-	font-size: 24px;
-	margin: 0px;
-	margin-bottom: 20px;
-}
+
 .card{
 
 	float: left;
@@ -271,6 +269,12 @@ background-color: rgba(255,255,255,0.05);
 	padding: 30px;
 	box-sizing:border-box;
 	/*border:  0.5px solid white;*/
+}
+
+.card h3{
+	font-size: 24px;
+	margin: 0px;
+	margin-bottom: 20px;
 }
 
 .card p{
@@ -324,9 +328,33 @@ background-color: rgba(255,255,255,0.05);
 }
 
 
+/*宽小于800*/
 @media screen and (max-width: 800px) {
 	
 	.main-wrapper{
-        background-size: contain;
+        /*background-size: contain;*/
+	}
+	#banner .inner{
+
+		max-width: 90%;
+	}
+	.skill-section{
+
+		padding: 40px 0px;
+	}
+	.card{
+
+		width: 100%;
+	}
+
+	nav ul li{
+		
+		margin-right: 20px;
+	}
+	.contants-section{
+	
+		
+		padding-bottom: 20px;
 	}
 }
+
