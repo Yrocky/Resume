@@ -1,4 +1,9 @@
 
+body{
+
+	font-family: 'Open Sans', sans-serif;
+
+}
 /*nav*/
 nav{
 	background: rgba(0,0,0,0.2);
@@ -64,36 +69,50 @@ nav a{
 /*banner*/
 #banner .inner{
 
-	max-width: 300px;
+	max-width: 600px;
 	text-align: center;
 	margin: 0 auto;
 	position: relative;
-	top: 200px;
+	top: 100px;
 	color: #fff;
 }
 #banner .inner p{
 
-	line-height: 30px;\
+	line-height: 30px;
 	margin: 10px;
 }
 #banner .inner h1{
 
 	margin: 0px;
+	margin-bottom: 40px;
+
 }
 
-button{
+.aboutme{
 	
-	margin-top: 100px;
+	display: inline-block;
+	line-height: inherit;
+	text-decoration: none;
+	margin-top: 80px;
 	border: none;
-	background: #333;
+	background: #E52D76;
 	color: #eee;
+	font-size: 18px;
+	border-radius: 10px;
 	padding: 10px;
 }
 
-#banner button{
+#banner .aboutme{
 
 	padding: 15px 60px;
 }
+
+#banner .aboutme:hover{
+
+	background: rgba(229, 45, 118,0.9);
+	color: rgba(1,1,1,0.5);
+}
+
 #banner .inner .more{
 
 	margin-top: 170px;
@@ -108,14 +127,14 @@ button{
 /*content*/
 
 /*Green*/
-.green-section{
+.contants-section{
 	
 	background: #46675F;
 	color: #fff;
 	text-align: center;
 	padding: 100px 0px;
 }
-.green-section .hr{
+.contants-section .hr{
 
 	background: #334C46;
 }
@@ -124,9 +143,12 @@ button{
 	max-width: 1080px;
 	margin: 0 auto;
 }
-.sub-heading{
 
+.sub-heading{
+	max-width: 80%;
+	margin: 0 auto;	
 	font-size: 18px;
+	line-height: 30px;
 }
 
 .icon-group{
@@ -134,7 +156,7 @@ button{
 	margin-top: 60px;
 }
 
-.green-section .icon-group .icon{
+.contants-section .icon-group .icon{
 
 	display: inline-block;
 	width: 80px;
@@ -146,12 +168,12 @@ button{
 }
 
 /*Gray*/
-.gray-section{
+.project-section{
 
 	background: orange;
 	color: #fff;
 }
-.gray-section .img-section{
+.project-section .img-section{
 
 	width: 35%;
 	margin-bottom: 0px;
@@ -186,7 +208,7 @@ background-color: rgba(255,255,255,0.05);
 	width: 100%;
 }
 
-.gray-section .text-section{
+.project-section .text-section{
 
 	width: 65%;
 	position: relative;
@@ -215,19 +237,19 @@ background-color: rgba(255,255,255,0.05);
 
 /*Purple*/
 
-.purple-section{
+.skill-section{
 
 	background: #262149;
 	color: white;
 	padding: 80px;
 }
 
-.purple-section .heading-wrapper{
+.skill-section .heading-wrapper{
 
 	text-align: center;
 }
 
-.purple-section .hr{
+.skill-section .hr{
 
 	width: 80%;
 	background: red;
@@ -296,8 +318,11 @@ background-color: rgba(255,255,255,0.05);
 	background-attachment:fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
+	z-index: 1;
+	position: relative;
 	background-position: center center;
 }
+
 
 @media screen and (max-width: 800px) {
 	
