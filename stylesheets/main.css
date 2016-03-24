@@ -126,7 +126,7 @@ nav a{
 }
 /*content*/
 
-/*Green*/
+/*contants*/
 .contants-section{
 	
 	background: #46675F;
@@ -167,7 +167,7 @@ nav a{
 	margin: 40px;
 }
 
-/*Gray*/
+/*project*/
 .project-section{
 
 	background: orange;
@@ -188,7 +188,7 @@ nav a{
 }
 .article-preview:nth-child(odd){
 
-background-color: rgba(255,255,255,0.05);
+	background-color: rgba(255,255,255,0.05);
 
 }
 .clearFix:after{
@@ -231,6 +231,7 @@ background-color: rgba(255,255,255,0.05);
 	margin-bottom: 10px;
 	line-height: 20px;
 	letter-spacing: 1px;
+	max-width: 90%;
 
 }
 .text-section *{
@@ -238,8 +239,7 @@ background-color: rgba(255,255,255,0.05);
 	max-width: 95%;
 }
 
-/*Purple*/
-
+/*skill*/
 .skill-section{
 
 	background: #262149;
@@ -315,7 +315,7 @@ background-color: rgba(255,255,255,0.05);
 	background: rgba(0,0,0,0.32);
 }
 
-
+/*background image*/
 .main-wrapper{
 
 	background: #444 url(../img/banner.jpg);
@@ -329,7 +329,7 @@ background-color: rgba(255,255,255,0.05);
 
 
 /*宽小于800*/
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 760px) {
 	
 	.main-wrapper{
         /*background-size: contain;*/
@@ -350,11 +350,23 @@ background-color: rgba(255,255,255,0.05);
 	nav ul li{
 		
 		margin-right: 20px;
+
 	}
-	.contants-section{
-	
+	.contants-section{	
 		
 		padding-bottom: 20px;
+	}
+	.hr{
+
+		width: 80%;
+	}
+	.project-section .text-section{
+
+		top: 10px;
+		left: 20px;
+	}
+	.project-section .text-section p{	
+		font-size: 13px;
 	}
 }
 
