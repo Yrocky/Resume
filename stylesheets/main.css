@@ -124,15 +124,22 @@ nav a{
 	margin: 20px auto;
 	height: 1px;
 }
+
+.heading-wrapper{
+
+	text-align: center;
+}
+
 /*content*/
 
 /*contants*/
 .contants-section{
 	
-	background: #46675F;
+	/*background: #8F847F;*/
+	background:  #1C2836;
 	color: #fff;
 	text-align: center;
-	padding: 100px 0px;
+	padding: 80px 0px;
 }
 .contants-section .hr{
 
@@ -170,8 +177,16 @@ nav a{
 /*project*/
 .project-section{
 
-	background: orange;
+	background: #249CD5;
 	color: #fff;
+}
+.project-section .project-wrapper{
+	padding: 80px 0px 20px;
+}
+.project-section .hr{
+
+	/*background: red;	*/
+	background: rgba(0,0,0,0.20);
 }
 .project-section .img-section{
 
@@ -186,7 +201,7 @@ nav a{
 	float: left;
 	font-size: 0px;
 }
-.article-preview:nth-child(odd){
+.article-preview:nth-child(even){
 
 	background-color: rgba(255,255,255,0.05);
 
@@ -242,19 +257,17 @@ nav a{
 /*skill*/
 .skill-section{
 
-	background: #262149;
+/*#262149*/
+/*#E26F50*/
+	background: #E26F50;
 	color: white;
 	padding: 80px;
 }
 
-.skill-section .heading-wrapper{
-
-	text-align: center;
-}
 
 .skill-section .hr{
 
-	background: red;
+	/*background: red;*/background: rgba(0,0,0,0.24);
 }
 .card-group{
 
@@ -367,6 +380,10 @@ nav a{
 	}
 	.project-section .text-section p{	
 		font-size: 13px;
+	}
+	.text-section h2{
+		
+		margin-bottom: 10px;
 	}
 }
 
