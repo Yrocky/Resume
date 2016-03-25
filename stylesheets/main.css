@@ -350,12 +350,21 @@ nav a{
 	background-position: center center;
 }
 
+/*宽小于1100,主要针对于iPad*/
+@media screen and (max-width: 1100px) {
+	
+	.main-wrapper{
+		background-image: url(../img/banner-iPad.jpg);
+	}
+}
 
-/*宽小于800*/
+
+
+/*宽小于760,主要针对于手机*/
 @media screen and (max-width: 760px) {
 	
 	.main-wrapper{
-        /*background-size: contain;*/
+		background-image: url(../img/banner-iPhone.jpg);
 	}
 	#banner .inner{
 
@@ -364,6 +373,10 @@ nav a{
 	.skill-section{
 
 		padding: 40px 0px;
+	}
+	.card-group {
+
+	    max-width: 500px;
 	}
 	.card{
 
@@ -397,3 +410,19 @@ nav a{
 	}
 }
 
+
+/*宽小于430,主要针对于iPhone 6 Plus*/
+@media screen and (max-width: 430px) {
+	.card-group {
+
+	    max-width: 370px;
+	}
+}
+
+/*宽小于380,主要针对于iPhone 6*/
+@media screen and (max-width: 380px) {
+	.card-group {
+
+	    max-width: 350px;
+	}
+}
