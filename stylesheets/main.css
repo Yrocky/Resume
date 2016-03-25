@@ -179,6 +179,7 @@ nav a{
 
 	background: #249CD5;
 	color: #fff;
+	overflow: hidden;
 }
 .project-section .project-wrapper{
 	padding: 80px 0px 20px;
@@ -188,12 +189,19 @@ nav a{
 	/*background: red;	*/
 	background: rgba(0,0,0,0.20);
 }
+.article-preview{
+
+	overflow: hidden;
+
+}
 .project-section .img-section{
 
 	width: 35%;
 	margin-bottom: 0px;
 	padding-bottom: 0px;
 	height: 100%;
+	max-height: 300px;
+	_height:expression(this.height > 300 ? "300px" : this.height);
 }
 
 .article-preview > div{
@@ -271,7 +279,8 @@ nav a{
 }
 .card-group{
 
-	margin: 20px;
+	margin: 20px auto;
+	max-width: 900px;
 }
 
 .card{
@@ -331,7 +340,8 @@ nav a{
 /*background image*/
 .main-wrapper{
 
-	background: #444 url(../img/banner.jpg);
+	background-image: url(../img/banner.jpg);
+	background-color:  #1C2836;
 	background-attachment:fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
