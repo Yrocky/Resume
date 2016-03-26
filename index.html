@@ -14,7 +14,7 @@
 <body>
 	<div class="main-wrapper">
 		
-		<a id="resume-about" class = "anchor"></a>
+		<a class="resume-about" class = "anchor"></a>
 		
 		<!-- 头 -->
 		<header>
@@ -26,10 +26,10 @@
 					</a>
 				</div> -->
 				<ul>
-					<li><a href="#resume-contants" class = "resume-contants" onclick="resumeFiexedNav('3');">Contact me</a></li>
-					<li><a href="#resume-skill" class = "resume-skill" onclick="resumeFiexedNav('2');">Ability</a></li>
-					<li><a href="#resume-project" class = "resume-project" onclick="resumeFiexedNav('1');">Experience</a></li>
-					<li><a href="#resume-about" class = "resume-about" onclick="scroller('resume-about', '1000000.25');">Rocky</a></li>
+					<li><a href="#resume-contants" class = "resume-contants-anchor" onclick="scrollTo('resume-contants');">Contact me</a></li>
+					<li><a href="#resume-skill" class = "resume-skill-anchor" onclick="scrollTo('resume-skill');">Ability</a></li>
+					<li><a href="#resume-project" class = "resume-project-anchor" onclick="scrollTo('resume-project');">Experience</a></li>
+					<li><a href="#resume-about" class = "resume-about-anchor" onclick="scrollTo('resume-about');">Rocky</a></li>
 				</ul>
 			</nav>
 
@@ -51,7 +51,7 @@
 		<!-- 内容 -->
 		<div class="content">
 
-			<a id="resume-project" class = "anchor"></a>
+			<a class="resume-project" class = "anchor"></a>
 
 			<section class="project-section">
 				
@@ -124,7 +124,7 @@
 
 			</section>
 			
-			<a id="resume-skill" class = "anchor"></a>
+			<a class="resume-skill" class = "anchor"></a>
 
 			<section class="skill-section">
 				<div >
@@ -174,7 +174,7 @@
 				</div>
 			</section>
 
-			<a id="resume-contants" class = "anchor"></a>
+			<a class="resume-contants" class = "anchor"></a>
 
 			<section class="contants-section">
 
@@ -227,32 +227,13 @@
 
 <SCRIPT type=text/javascript>
 
+function scrollTo(anchor){
+
+	$('html,body').animate({
+			scrollTop: $('.'+anchor).offset().top
+	}, 800);
+}
 
 </SCRIPT>
-
-<STYLE type=text/css>
-div.test {
-width:400px;
-margin:5px auto;
-border:1px solid #ccc;
-}
-div.test strong {
-font-size:16px;
-background:#fff;
-border-bottom:1px solid #aaa;
-margin:0;
-display:block;
-padding:5px 0;
-text-decoration:underline;
-color:#059B9A;
-cursor:pointer;
-}
-div.test p {
-height:400px;
-background:#f1f1f1;
-margin:0;
-}
-
-</STYLE>
 
 </html>

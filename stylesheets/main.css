@@ -56,7 +56,7 @@ nav ul li :hover{
 	color: red;
 }
 
- .resume-about:hover{
+ .resume-about-anchor:hover{
 
 	color: #E52D76;
 }
@@ -65,7 +65,7 @@ nav ul li :hover{
 
 	color: #334C46;
 }
-.resume-skill:hover{
+.resume-skill-anchor:hover{
 
 	color: #334C46;
 }
@@ -73,14 +73,14 @@ nav ul li :hover{
 
 	color: #F4CEA5;	
 }
- .resume-project:hover{
+ .resume-project-anchor:hover{
 
 	color: #F4CEA5;
 }
 .contants-selected{
 	color: hsla(0,0%,100%,.6);
 }
- .resume-contants:hover{
+ .resume-contants-anchor:hover{
 
 	color: hsla(0,0%,100%,.6);
 }
