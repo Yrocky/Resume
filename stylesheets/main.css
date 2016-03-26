@@ -409,6 +409,9 @@ nav a{
 	background-attachment:fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
+	-webkit-background-size: cover;
+	-ms-background-size:cover;
+	-moz-background-size:cover;
 	z-index: 1;
 	position: relative;
 	background-position: center center;
