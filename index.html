@@ -42,7 +42,7 @@
 
 					<p>下面是我所做的一些项目以及自己的一些技能覆盖面摘要，如果您在看完我的简历之后觉得我是可以在贵公司发光发热的一员，请通过最下方的联系方式联系我。</p>
 
-					<a class="aboutme" href="#resume-project">了解更多</a>
+					<a class="aboutme" href="#resume-project" onclick="scrollTo('resume-project');">了解更多</a>
 				</div>
 				
 			</div>	
@@ -127,15 +127,18 @@
 			<a class="resume-skill" class = "anchor"></a>
 
 			<section class="skill-section">
-				<div >
-					
-					<div class="heading-wrapper">	
-						<h2>个人能力</h2>
-						<div class="hr"></div>
-						<div class="sub-heading">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elitUt tempore asperiores doloremque quidem suscipit, atque voluptates!
-						</div>			
+				<!-- <div > -->
+
+					<div class="skill-wrapper">
+						<div class="heading-wrapper">	
+							<h2>个人能力</h2>
+							<div class="hr"></div>
+							<div class="sub-heading">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elitUt tempore asperiores doloremque quidem suscipit, atque voluptates!
+							</div>			
+						</div>	
 					</div>
+					
 
 					<div class="card-group clearFix">
 						<div class="card">
@@ -171,15 +174,14 @@
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, illum, aspernatur ducrcitationem ratione recusandae pariatur inventore repellendus.</p>
 						</div>
 					</div>
-				</div>
+				<!-- </div> -->
 			</section>
 
 			<a class="resume-contants" class = "anchor"></a>
 
 			<section class="contants-section">
 
-				<div class="wrapper">
-					
+				<div class="contants-wrapper">
 					<div class = "heading-wrapper">
 						<h2>联系我</h2>
 						<div class="hr"></div>
@@ -223,17 +225,14 @@
 
 		// body...
 	}
+
+	function scrollTo(anchor){
+
+		$('html,body').animate({
+				scrollTop: $('.'+anchor).offset().top
+		}, 800);
+	}
+
 </script>
-
-<SCRIPT type=text/javascript>
-
-function scrollTo(anchor){
-
-	$('html,body').animate({
-			scrollTop: $('.'+anchor).offset().top
-	}, 800);
-}
-
-</SCRIPT>
 
 </html>
