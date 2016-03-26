@@ -369,7 +369,6 @@ nav a{
 /*contants*/
 .contants-section{
 	
-	/*background: #8F847F;*/
 	background:  #171f26;
 	color: hsla(0,0%,100%,.6);
 	text-align: center;
@@ -395,11 +394,23 @@ nav a{
 	display: inline-block;
 	width: 80px;
 	height: 80px;
-	border:  1px solid rgba(255,255,255,0.05);
-	/*background: #334C46;*/
-	transform: rotate(45deg);
+	/*border: 1px solid rgba(255,255,255,0.05);*/
 	margin: 40px;
+	color: hsla(0,0%,100%,.6);
 }
+.icon-group .icon:after{
+
+	content: '';
+	transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+}
+i.fa:hover{
+	
+	color: #fff;
+}
+
 
 /*background image*/
 .main-wrapper{
@@ -416,33 +427,8 @@ nav a{
 	position: relative;
 	background-position: center center;
 }
-/*.main-wrapper {
-	background-repeat: no-repeat;
-	background-attachment:fixed;
-	background-position: center center;
-    width: 100%;
-    min-height: 50em;
-    position: relative;
-    background-color: #1C2836;
-    z-index: 1;
-}
 
-.main-wrapper:after {
-    background: url(../img/banner.jpg);
-    background-size: cover;
-    position: absolute;
-    content: "";
-    z-index: -1;
-    opacity: .9;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-}*/
-
-
-
-
+/*media */
 
 /*宽小于1100,主要针对于iPad*/
 @media screen and (max-width: 1100px) {
@@ -452,7 +438,6 @@ nav a{
 		background-image: url(../img/banner-1-iPad.jpg);
 	}
 }
-
 
 
 /*宽小于567,主要针对于手机、横屏状况*/
