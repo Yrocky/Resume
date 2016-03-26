@@ -121,7 +121,6 @@
 						<img src="source/project-blog.png" alt="">
 					</div>
 				</div>
-
 			</section>
 			
 			<a class="resume-skill" class = "anchor"></a>
@@ -207,21 +206,21 @@
 </body>
 <script type="text/javascript">
 	function resumeFiexedNav (e) {
-		if (e == '0') {
-			$(this).addClass("aboutme-selected");
-		};
+		// if (e == '0') {
+		// 	$(this).addClass("aboutme-selected");
+		// };
 		
-		if (e == '1') {
-			$(this).addClass("project-selected");
-		};
+		// if (e == '1') {
+		// 	$(this).addClass("project-selected");
+		// };
 
-		if (e == '2') {
-			$(this).addClass("skill-selected");
-		};
+		// if (e == '2') {
+		// 	$(this).addClass("skill-selected");
+		// };
 
-		if (e == '3') {
-			$(this).addClass("contants-selected");
-		};
+		// if (e == '3') {
+		// 	$(this).addClass("contants-selected");
+		// };
 
 		// body...
 	}
@@ -232,7 +231,36 @@
 				scrollTop: $('.'+anchor).offset().top
 		}, 800);
 	}
+	$(function(){
+		// alert($('.project-section')[0].scrollTop);
+		// if($('.project-section')[0].scrollTop=='100'){
+		// // alert();	
+		// 	$('.resume-project-anchor').addClass("project-selected");
+		// }
+		$('body').scroll(function(){
+			// alert();
+						$('.resume-project-anchor').addClass("project-selected");
 
+		});
+
+
+	});
+
+	window.onscroll = function(){ 
+		// alert($('.project-section').offset().top);
+		// if($('.project-section')[0].scrollTop==0){
+		// // alert();	
+		// alert($('.project-section')[0].scrollTop);
+		// 	$('.resume-project-anchor').addClass("project-selected");
+		// }
+	    // var t = document.documentElement.scrollTop || document.body.scrollTop;  
+	    // var top_div = document.getElementById( "top_div" ); 
+	    // if( t >= 300 ) { 
+	    //     top_div.style.display = "inline"; 
+	    // } else { 
+	    //     top_div.style.display = "none"; 
+	    // } 
+	}
 </script>
 
 </html>
