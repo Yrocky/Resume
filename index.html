@@ -14,17 +14,12 @@
 <body>
 	<div class="main-wrapper">
 		
-		<a class="resume-about" class = "anchor"></a>
-		
+		<a class="resume-about anchor"></a>
 		<!-- 头 -->
 		<header>
+
+			<!-- 导航条 -->
 			<nav>
-				<!-- <div class="logo">
-					<a href="http:yrocky.github.io">
-						<img border="0" width = "50px" height = "50px" src="http://tp4.sinaimg.cn/2055300355/180/5701319722/2">
-						
-					</a>
-				</div> -->
 				<ul>
 					<li><a href="#resume-contants" class = "resume-contants-anchor" onclick="scrollTo('resume-contants');">Contact me</a></li>
 					<li><a href="#resume-skill" class = "resume-skill-anchor" onclick="scrollTo('resume-skill');">Ability</a></li>
@@ -33,10 +28,11 @@
 				</ul>
 			</nav>
 
+			<!-- 个人简介 -->
 			<div id = "banner">
 				<div class="inner">
 					<h1>个人简介</h1>
-					<p>你好，我是杨恒，一位iOS研发工程师。从事这份职业已近两年，目前处于找工作的阶段，感谢您翻阅我的简历。</p>
+					<p>你好，我是杨恒，一位iOS研发工程师。从事这份职业已近两年，坐标上海，目前处于找工作的阶段，感谢您翻阅我的简历。</p>
 
 					<p>毕业于河南理工大学，就职过两家公司，参与过多个商业项目的开发，个人也有一些不值得一提的上架小项目。在工作之余会接触学习一些新的语言和新的框架，保持有良好的持续学习习惯，目前通过闲暇时间自学前端、Python知识，算是入门阶段的水平。</p>
 
@@ -44,15 +40,15 @@
 
 					<a class="aboutme" href="#resume-project" onclick="scrollTo('resume-project');">了解更多</a>
 				</div>
-				
 			</div>	
+
 		</header>
 
 		<!-- 内容 -->
 		<div class="content">
-
-			<a class="resume-project" class = "anchor"></a>
-
+			
+			<!-- 项目 -->
+			<a class="resume-project anchor"></a>
 			<section class="project-section">
 				
 				<div class= "project-wrapper">
@@ -123,8 +119,8 @@
 				</div>
 			</section>
 			
-			<a class="resume-skill" class = "anchor"></a>
-
+			<!-- 技能 -->
+			<a class="resume-skill anchor"></a>
 			<section class="skill-section">
 				<!-- <div > -->
 
@@ -175,9 +171,9 @@
 					</div>
 				<!-- </div> -->
 			</section>
-
-			<a class="resume-contants" class = "anchor"></a>
-
+			
+			<!-- 联系我 -->
+			<a class="resume-contants anchor"></a>
 			<section class="contants-section">
 
 				<div class="contants-wrapper">
@@ -200,66 +196,16 @@
 
 		<!-- 脚 -->
 		<footer>
-			
 		</footer>
 	</div>
 </body>
 <script type="text/javascript">
-	function resumeFiexedNav (e) {
-		// if (e == '0') {
-		// 	$(this).addClass("aboutme-selected");
-		// };
-		
-		// if (e == '1') {
-		// 	$(this).addClass("project-selected");
-		// };
-
-		// if (e == '2') {
-		// 	$(this).addClass("skill-selected");
-		// };
-
-		// if (e == '3') {
-		// 	$(this).addClass("contants-selected");
-		// };
-
-		// body...
-	}
 
 	function scrollTo(anchor){
 
 		$('html,body').animate({
 				scrollTop: $('.'+anchor).offset().top
 		}, 800);
-	}
-	$(function(){
-		// alert($('.project-section')[0].scrollTop);
-		// if($('.project-section')[0].scrollTop=='100'){
-		// // alert();	
-		// 	$('.resume-project-anchor').addClass("project-selected");
-		// }
-		$('body').scroll(function(){
-			// alert();
-						$('.resume-project-anchor').addClass("project-selected");
-
-		});
-
-
-	});
-
-	window.onscroll = function(){ 
-		// alert($('.project-section').offset().top);
-		// if($('.project-section')[0].scrollTop==0){
-		// // alert();	
-		// alert($('.project-section')[0].scrollTop);
-		// 	$('.resume-project-anchor').addClass("project-selected");
-		// }
-	    // var t = document.documentElement.scrollTop || document.body.scrollTop;  
-	    // var top_div = document.getElementById( "top_div" ); 
-	    // if( t >= 300 ) { 
-	    //     top_div.style.display = "inline"; 
-	    // } else { 
-	    //     top_div.style.display = "none"; 
-	    // } 
 	}
 </script>
 
