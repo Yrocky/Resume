@@ -445,7 +445,7 @@ nav a{
 @media screen and (max-width: 1100px) {
 	
 	.main-wrapper{
-		background-image: url(../img/banner-1-iPad.jpg);
+		/*background-image: url(../img/banner-1-iPad.jpg);*/
 	}
 }
 
@@ -455,7 +455,7 @@ nav a{
 @media screen and (max-width: 450px) {
 	
 	.main-wrapper{
-		background-image: url(../img/banner-1-iPhone.jpg);
+		/*background-image: url(../img/banner-1-iPhone.jpg);*/
 	}
 	#banner .inner{
 
