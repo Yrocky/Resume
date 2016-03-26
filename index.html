@@ -199,46 +199,48 @@
 	</div>
 </body>
 <script type="text/javascript">
-	function resumeFiexedNav (e) {
-		// if (e == '0') {
-		// 	$(this).addClass("aboutme-selected");
-		// };
+	// function resumeFiexedNav (e) {
+	// 	if (e == '0') {
+	// 		$(this).addClass("aboutme-selected");
+	// 	};
 		
-		// if (e == '1') {
-		// 	$(this).addClass("project-selected");
-		// };
+	// 	if (e == '1') {
+	// 		$(this).addClass("project-selected");
+	// 	};
 
-		// if (e == '2') {
-		// 	$(this).addClass("skill-selected");
-		// };
+	// 	if (e == '2') {
+	// 		$(this).addClass("skill-selected");
+	// 	};
 
-		// if (e == '3') {
-		// 	$(this).addClass("contants-selected");
-		// };
+	// 	if (e == '3') {
+	// 		$(this).addClass("contants-selected");
+	// 	};
 
-		// body...
-	}
+	// 	// body...
+	// }
 
 	function scrollTo(anchor){
 
+			alert('resume-contants');
 		$('html,body').animate({
+			alert('resume-contants');
 				scrollTop: $('.'+anchor).offset().top
 		}, 800);
 	}
-	$(function(){
-		// alert($('.project-section')[0].scrollTop);
-		// if($('.project-section')[0].scrollTop=='100'){
-		// // alert();	
-		// 	$('.resume-project-anchor').addClass("project-selected");
-		// }
-		$('body').scroll(function(){
-			// alert();
-						$('.resume-project-anchor').addClass("project-selected");
+	// $(function(){
+	// 	// alert($('.project-section')[0].scrollTop);
+	// 	// if($('.project-section')[0].scrollTop=='100'){
+	// 	// // alert();	
+	// 	// 	$('.resume-project-anchor').addClass("project-selected");
+	// 	// }
+	// 	$('body').scroll(function(){
+	// 		// alert();
+	// 					$('.resume-project-anchor').addClass("project-selected");
 
-		});
+	// 	});
 
 
-	});
+	// });
 
 	// window.onscroll = function(){ 
  //        // alert($('.project-section').offset().top);
@@ -255,43 +257,6 @@
  //        //     top_div.style.display = "none"; 
  //        // } 
  //    };
-
-	window.onscroll= function () {
-
-    	// var w = window.scrollTop();
-    	// alert('w');
-    	// 	g = $sitehead.offset().top,
-    	// 	h = $sitehead.offset().top + $(this).height()-100;
-
-    	// if(w >= g && w<=h) {
-    	// 	$('.fixed-nav').fadeOut('fast')
-    	// 	alert('fadeOut');
-    	// } else {
-     //        if(window.width()>500)
-    	// 	  $('.fixed-nav').fadeIn('fast')
-    	// 	alert('fadeIn');
-    	// }
-
-    	$post.each(function () {
-    		alert('ere');
-    		var f = $(this).offset().top,
-    			b = $(this).offset().top + $(this).height(),
-    		 	t = $(this).find('.post-title').text(),
-    		 	i = $(".fn-item[item='"+t+"']"),
-    		 	// a = $(this).parent('.post-holder').prev('.post-holder').find('.post-after');
-
-    		 $(this).attr('item', t)
-
-    		if(w >= f && w<=b) {
-
-    			i.addClass('active');
-    			// a.fadeOut('slow')
-    		} else {
-    			i.removeClass('active');
-    			// a.fadeIn('slow')
-    		}
-    	})
-    };
 
 </script>
 
