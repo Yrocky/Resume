@@ -123,7 +123,7 @@ nav a{
 
 	margin: 0px;
 	margin-bottom: 40px;
-
+	padding-top: 50px;
 }
 
 .aboutme{
@@ -404,7 +404,7 @@ nav a{
 /*background image*/
 .main-wrapper{
 
-	background-image: url(../img/banner.jpg);
+	background-image: url(../img/banner-1.jpg);
 	background-color:  #1C2836;
 	background-attachment:fixed;
 	background-repeat: no-repeat;
@@ -445,21 +445,24 @@ nav a{
 @media screen and (max-width: 1100px) {
 	
 	.main-wrapper{
-		background-image: url(../img/banner-iPad.jpg);
+		background-image: url(../img/banner-1-iPad.jpg);
 	}
 }
 
 
 
-/*宽小于760,主要针对于手机*/
-@media screen and (max-width: 760px) {
+/*宽小于450,主要针对于手机*/
+@media screen and (max-width: 450px) {
 	
 	.main-wrapper{
-		background-image: url(../img/banner-iPhone.jpg);
+		background-image: url(../img/banner-1-iPhone.jpg);
 	}
 	#banner .inner{
 
 		max-width: 90%;
+	}
+	.aboutme{
+		display: none;
 	}
 	.skill-section{
 
@@ -516,17 +519,26 @@ nav a{
 
 	    max-width: 350px;
 	}
+	#banner .inner h1{
+		padding-top: 10px;
+	}
 }
 
 
 /*宽小于320,主要针对于iPhone 5*/
-@media screen and (max-width: 321px) {
+@media screen and (max-width: 320px) {
 
 	nav ul li{
 
 		font-size: 13px;
 	}
+	#banner {
 
+		height: 580px;
+	}
+	#banner .inner h1{
+		padding-top: 0px;
+	}
 	#banner .inner p{
 
 		line-height: 22px;
