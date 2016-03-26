@@ -313,21 +313,26 @@ nav a{
 	float: left;
 	min-height: 300px;
 	width: 50%;
-	padding: 30px;
+	padding: 30px 30px 30px 0px;
 	box-sizing:border-box;
 	/*border:  0.5px solid white;*/
 }
 
+.card-fa{
+
+	margin-right: 10px;
+}
 .card h3{
 	font-size: 20px;
 	/*color: #171f26;*/
 	color: #334C46;
 	margin: 0px;
+	padding-left: 10px;
 	margin-bottom: 20px;
 }
 
 .card p{
-
+	padding-left: 30px;
 	font-size: 18px;
 	letter-spacing: 1px;
 	/*color: */
@@ -406,7 +411,7 @@ nav a{
 	-moz-transform: rotate(45deg);
 	-webkit-transform: rotate(45deg);
 }
-i.fa:hover{
+.icon-group .icon i.fa:hover{
 	
 	color: #fff;
 }
