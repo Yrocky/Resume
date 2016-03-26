@@ -8,6 +8,8 @@
 	<!-- <link rel="stylesheet" href="stylesheets/eric-meyer-reset.main.css"> -->
 	<link rel="stylesheet" href="stylesheets/font-awesome.min.css">
 	<link rel="stylesheet" href="stylesheets/main.css">
+	<script src = "js/jquery-1.9.1.js"></script>
+	<!-- // <script src = "js/common.js"></script> -->
 </head>
 <body>
 	<div class="main-wrapper">
@@ -22,10 +24,10 @@
 					</a>
 				</div> -->
 				<ul>
-					<li><a href="#resume-contants">Contact me</a></li>
-					<li><a href="#resume-skill">Ability</a></li>
-					<li><a href="#resume-project">Experience</a></li>
-					<li><a href="#resume-about">Rocky</a></li>
+					<li><a href="#resume-contants" class = "resume-contants" onclick="resumeFiexedNav('3');">Contact me</a></li>
+					<li><a href="#resume-skill" class = "resume-skill" onclick="resumeFiexedNav('2');">Ability</a></li>
+					<li><a href="#resume-project" class = "resume-project" onclick="resumeFiexedNav('1');">Experience</a></li>
+					<li><a href="#resume-about" class = "resume-about" onclick="resumeFiexedNav('0');">Rocky</a></li>
 				</ul>
 			</nav>
 
@@ -186,7 +188,7 @@
 						<a href="https://github.com/Yrocky" class = "fa fa-github icon">item1</a>
 						<a href="http://weibo.com/Yeungrocky/home?wvr=5&lf=reg"class = "fa fa-weibo icon">item2</a>
 						<a href="http://yrocky.github.io/"class = "fa fa-pencil icon">item3</a>	
-						<a href="mailto:983272765@qq.com" class = "icon">item4</a>
+						<a href="mailto:983272765@qq.com" class = "fa fa-envelope icon">item4</a>
 					</div>
 				</div>
 			</section>
@@ -199,4 +201,27 @@
 		</footer>
 	</div>
 </body>
+<script type="text/javascript">
+	function resumeFiexedNav (e) {
+		if (e == '0') {
+			$(this).addClass("aboutme-selected");
+		};
+		
+		if (e == '1') {
+			$(this).addClass("project-selected");
+		};
+
+		if (e == '2') {
+			$(this).addClass("skill-selected");
+		};
+
+		if (e == '3') {
+			$(this).addClass("contants-selected");
+		};
+
+		// body...
+	}
+
+
+</script>
 </html>
