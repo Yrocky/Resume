@@ -256,7 +256,8 @@ nav a{
 /*
 #0e83cd
 */
-	color: #171f26;
+	/*color: #171f26;*/
+	color: #334C46;
 }
 
 .skill-section .hr{
@@ -281,7 +282,8 @@ nav a{
 
 .card h3{
 	font-size: 20px;
-	color: #171f26;
+	/*color: #171f26;*/
+	color: #334C46;
 	margin: 0px;
 	margin-bottom: 20px;
 }
