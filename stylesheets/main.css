@@ -203,6 +203,10 @@ nav a{
 	overflow: hidden;
 
 }
+.article-preview .text-section p{
+	
+	line-height: 1.5;
+}
 .project-section .img-section{
 
 	width: 35%;
@@ -335,7 +339,7 @@ nav a{
 	padding-left: 30px;
 	font-size: 18px;
 	letter-spacing: 1px;
-	/*color: */
+	line-height: 1.5;
 }
 
 .card:first-child{
@@ -475,7 +479,10 @@ nav a{
 
 		width: 100%;
 	}
-
+	.card p{
+		
+		line-height: 1.2;
+	}
 	nav ul li{
 		
 		margin-right: 20px;
