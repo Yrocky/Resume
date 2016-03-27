@@ -6,14 +6,13 @@ body{
 }
 /*nav*/
 nav{
-	background: rgba(0,0,0,0.2);
-	/*background: gray;*/
+	/*background: rgba(0,0,0,0.2);*/
 	height: 70px;
-	/*position: relative;*/
 	position: fixed;
 	left: 0px;
 	z-index: 2;
 	right: 0px;
+	background: #171f26;
 }
 
 #banner{
@@ -34,7 +33,7 @@ h2{
 ul{
 
 	list-style: none;
-	margin: 0px
+	margin: 0px;
 }
 
 nav ul li{

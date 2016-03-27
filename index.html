@@ -17,7 +17,7 @@
 		<header>
 
 			<!-- 导航条 -->
-			<nav class = "fixed-nav">
+			<nav id = "fixed-nav">
 
 				<ul>
 					<li><a href="#resume-contants" class = "resume-contants-anchor" onclick="scrollTo('resume-contants');">Contact me</a></li>
@@ -32,11 +32,11 @@
 				<div class="inner">
 					<h1>个人简介</h1>
 
-					<p>你好，我叫杨恒，是一位iOS研发工程师。从事这份职业已近两年，目前处于找工作的阶段，坐标上海，感谢您翻阅我的简历。</p>
+					<p>你好，我叫杨恒，是一位iOS研发工程师。从事这份职业已近两年，目前处于找工作的阶段，坐标上海，首先感谢您翻阅我的简历。</p>
 
 					<p>毕业于河南理工大学，就职过两家公司，参与过多个商业项目的开发，个人也有一些不值得一提的上架小项目。在工作之余会接触学习一些新的语言和新的框架，保持有良好的持续学习习惯，目前通过闲暇时间自学前端、Python知识，算是入门阶段的水平。</p>
 
-					<p>下面是我所做的一些项目以及自己的一些技能覆盖面摘要，如果您在看完我的简历之后觉得我是可以在贵公司发光发热的一员，请通过最下方的联系方式联系我。</p>
+					<p>下面是我所做的一些项目以及自己的一些技能覆盖面摘要，如果您在看完我的简历之后觉得我是可以在贵公司发光发热的一员，请通过最下方的联系方式通知我面试，谢谢。</p>
 
 					<a class="aboutme" href="#resume-project" onclick="scrollTo('resume-project');">了解更多</a>
 				</div>
@@ -136,7 +136,7 @@
 					</div>
 					<div class="text-section">
 						<h2>个人简历</h2>
-						<p>这是一个使用HTML5+CSS3以及少许的JQuery编写的静态个人简历，部署在Github上。从界面设计到具体实现都是我一个人完成的，拥有响应式布局功能，能够完美适配移动端的iPhone5+、以及PC端的主流浏览器。</p>
+						<p>这是一个使用HTML5+CSS3以及少许的JavaScript编写的静态个人简历，部署在Github上。从界面设计到具体实现都是我一个人完成的，拥有响应式布局功能，能够完美适配移动端的iPhone5+、iPad以及PC端的主流浏览器。</p>
 						<p>做这样的一个Web简历的初衷是节约面试纸张。大多数的面试基本流程都是打印一份简历，面试官看完之后就堆放在了办公室，亦或是扔进了垃圾桶，这对处于提倡节约以及保护环境的当下是一种反基调。因此我觉得我应该用我能力之内的技术从我开始减少这种现象、以期改变这种现象。</p>
 					</div>
 				</div>
@@ -204,7 +204,7 @@
 					<div class = "heading-wrapper">
 						<h2>联系我</h2>
 						<div class="hr"></div>
-						<p class = "sub-heading">我一般活跃在 GitHub、新浪微博 和 知乎上，偶尔也会在自己的博客上写些东西，如果您需要联系我可以通过下面的方式，当然如果方便的话可以给我发邮件。</p>
+						<p class = "sub-heading">我一般活跃在 GitHub、新浪微博 和 知乎上，偶尔也会在自己的博客上写些东西，如果您需要联系我可以通过下面的方式，当然如果方便的话请给我发邮件。</p>
 					</div>
 
 					<div class = "icon-group">
@@ -238,6 +238,20 @@
 		$('html,body').animate({
 				scrollTop: $('.'+anchor).offset().top
 		}, 800);
+		changeNavBackgroungColor(anchor)
+	}
+
+	function changeNavBackgroungColor(anchor){
+
+		var nav = document.getElementById("fixed-nav");
+
+		if (anchor == 'resume-skill') {
+			nav.style.background = "#81A9CC";
+		}else if (anchor == 'resume-about') {
+			nav.style.background = "rgba(0,0,0,0.2)";
+		}else{
+			nav.style.background = "#171f26";
+		};
 	}
 </script>
 
