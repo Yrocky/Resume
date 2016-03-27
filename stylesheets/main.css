@@ -174,7 +174,7 @@ nav a{
 }
 
 .sub-heading{
-	max-width: 80%;
+	max-width: 60%;
 	margin: 0 auto;	
 	font-size: 18px;
 	line-height: 30px;
@@ -336,9 +336,8 @@ nav a{
 	float: left;
 	min-height: 300px;
 	width: 50%;
-	padding: 30px 30px 30px 0px;
+	padding: 30px 30px 0px 0px;
 	box-sizing:border-box;
-	/*border:  0.5px solid white;*/
 }
 
 .card-fa{
@@ -356,7 +355,7 @@ nav a{
 
 .card p{
 	padding-left: 30px;
-	font-size: 18px;
+	font-size: 16px;
 	letter-spacing: 1px;
 	line-height: 1.5;
 }
@@ -487,7 +486,19 @@ margin： 0.04
 	}
 }
 
+/* 所有的手机的横屏*/
+@media screen and (min-width: 567px ) and (max-width:737px){
+	
+	.card-group{
+		max-width: 95%;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.sub-heading{
 
+		max-width: 80%;		
+	}
+}
 /*宽小于567,主要针对于手机、横屏状况*/
 @media screen and (max-width: 567px) {
 	
@@ -522,7 +533,7 @@ margin： 0.04
 	}
 	.card p{
 		
-		line-height: 1.2;
+		line-height: 1.5;
 	}
 	nav ul li{
 		
@@ -548,7 +559,10 @@ margin： 0.04
 		left: 40px;
 	}
 	.project-section .text-section p{	
-		font-size: 13px;
+		font-size: 14px;
+	}
+	.card p{
+		font-size: 14px;
 	}
 	.project-section .text-section h3{
 		
@@ -572,12 +586,16 @@ margin： 0.04
 	nav ul li{
 		line-height: 50px;
 	}
+	.sub-heading{
+
+		max-width: 80%;		
+	}
 	.article-preview .text-section{
 		width: 100%;
 	}
 }
 
-/*宽小于430,主要针对于iPhone 6 Plus*/
+/*宽小于430,主要针对于iPhone 6 Plus 竖屏*/
 @media screen and (max-width: 430px) {
 	.card-group {
 
@@ -589,19 +607,20 @@ margin： 0.04
 	}
 }
 
-/*宽小于380,主要针对于iPhone 6*/
+/*宽小于380,主要针对于iPhone 6 竖屏*/
 @media screen and (max-width: 380px) {
 	.card-group {
 
 	    max-width: 350px;
 	}
+
 	#banner .inner h1{
 		padding-top: 10px;
 	}
 }
 
 
-/*宽小于320,主要针对于iPhone 5*/
+/*宽小于320,主要针对于iPhone 5 竖屏*/
 @media screen and (max-width: 320px) {
 
 	nav ul li{
@@ -630,7 +649,7 @@ margin： 0.04
 	}
 	.card-group {
 
-	    max-width: 310px;
+	    max-width: 300px;
 	}
 	
 }
