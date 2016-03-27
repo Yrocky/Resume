@@ -601,6 +601,30 @@ margin： 0.04
 	.article-preview .text-section{
 		width: 100%;
 	}
+
+	.card:nth-child(7){
+		background: rgba(0,0,0,0.28);
+	}
+	.card:nth-child(8){
+		background: rgba(0,0,0,0.20);
+	}
+
+
+	.card:nth-child(9){
+		background: rgba(0,0,0,0.16);
+	}
+
+	.card:nth-child(10){
+		background: rgba(0,0,0,0.12);
+	}
+
+	.card:nth-child(11){
+		background: rgba(0,0,0,0.08);
+	}
+	.card:nth-child(12){
+		background: rgba(0,0,0,0.04);
+	}
+
 }
 
 /*宽小于430,主要针对于iPhone 6 Plus 竖屏*/
