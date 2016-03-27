@@ -6,7 +6,6 @@ body{
 }
 /*nav*/
 nav{
-	/*background: rgba(0,0,0,0.2);*/
 	height: 70px;
 	position: fixed;
 	left: 0px;
@@ -21,9 +20,7 @@ nav{
 }
 
 h1{
-
 	font-size: 30px;
-	/*padding-bottom: 30px;*/
 }
 h2{
 
@@ -559,7 +556,7 @@ margin： 0.04
 	}
 }
 
-/*设备的 Height >= Width，主要就是手机的竖屏状态*/
+/*设备的 Height >= Width，主要就是手机、iPad的竖屏状态*/
 @media only screen and (orientation: portrait) {
     
 
@@ -567,11 +564,14 @@ margin： 0.04
 		
 		width: 100%;
 		max-height: 200px;
-		/*float: left;*/
-
 	}
-
-
+	
+	nav{
+		height: 50px;
+	}
+	nav ul li{
+		line-height: 50px;
+	}
 	.article-preview .text-section{
 		width: 100%;
 	}
