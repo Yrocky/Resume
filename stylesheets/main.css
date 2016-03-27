@@ -364,6 +364,10 @@ nav a{
 	line-height: 1.5;
 }
 
+/*
+begin：0.04
+margin： 0.04
+*/
 .card:first-child{
 
 	background: rgba(0,0,0,0.04);
@@ -394,6 +398,22 @@ nav a{
 }
 .card:nth-child(8){
 	background: rgba(0,0,0,0.32);
+}
+
+
+.card:nth-child(9){
+	background: rgba(0,0,0,0.36);
+}
+
+.card:nth-child(10){
+	background: rgba(0,0,0,0.40);
+}
+
+.card:nth-child(11){
+	background: rgba(0,0,0,0.44);
+}
+.card:nth-child(12){
+	background: rgba(0,0,0,0.48);
 }
 
 
@@ -497,6 +517,7 @@ nav a{
 
 	    max-width: 500px;
     	padding:0px;
+    	padding-bottom: 20px;
 	}
 	.card{
 
