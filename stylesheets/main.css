@@ -180,6 +180,18 @@ nav a{
 	line-height: 30px;
 }
 
+.sub-heading a{
+
+	display: inline-block;
+	line-height: inherit;
+	text-decoration: none;
+	color: #F4CEA5;
+}
+.sub-heading a:hover{
+
+	opacity: 0.8;
+}
+
 /*project*/
 .project-section{
 
@@ -199,7 +211,6 @@ nav a{
 .project-section h2{
 
 	color: #F4CEA5;
-	/*color: #E52D76;*/
 }
 .article-preview{
 
