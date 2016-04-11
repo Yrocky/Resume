@@ -110,18 +110,22 @@ nav a{
 	top: 100px;
 	color: #fff;
 }
-#banner .inner p{
+#banner .inner p {
 
 	line-height: 30px;
 	margin: 10px;
 }
+
 #banner .inner h1{
 
 	margin: 0px;
 	margin-bottom: 40px;
 	padding-top: 50px;
 }
-
+#banner .inner .pink{
+	
+	color: #E52D76;
+}
 .aboutme{
 	
 	display: inline-block;
